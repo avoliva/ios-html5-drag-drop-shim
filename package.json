@@ -8,7 +8,7 @@
   "scripts": {
     "start": "grunt",
     "build": "grunt compile",
-    "postinstall": "grunt ts",
+    "postinstall": "npm install && grunt ts",
     "release:build": "grunt build-release",
     "release:serve": "grunt serve-release",
     "release:prepare:prerelease": "grunt prepare-release:prerelease",
