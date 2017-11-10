@@ -1351,7 +1351,7 @@ function translateDragImage(dragImage:HTMLElement, pnt:Point, originalTransforms
         y += offset.y;
     }
 
-    if (centerOnCoordinates) {
+    if (centerOnCoordinates && dragImage) {
         x -= (parseInt(<any>dragImage.offsetWidth, 10) / 2);
         y -= (parseInt(<any>dragImage.offsetHeight, 10) / 2);
     }
